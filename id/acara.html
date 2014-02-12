@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Konferensi dan acara - Bitcoin</title>
+<link rel="stylesheet" type="text/css" href="/881e3b5f1fc2f308c371884728024806.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/d1ab072c9186f190ac3937b7de8bb5f1.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/logo_ios.png"/>
+</head>
+<body>
+
+  <div class="head"><div>
+    <select id="langselect" class="langselect" onchange="window.location=this.value;">
+    
+      <option value="/de/events">Deutsch</option>
+    
+      <option value="/id/acara" selected="selected">Bahasa Indonesia‬</option>
+    
+      <option value="/en/events">English</option>
+    
+      <option value="/es/">Español</option>
+    
+      <option value="/fr/evenements">Français</option>
+    
+      <option value="/it/eventi">Italiano</option>
+    
+      <option value="/nl/evenementen">Nederlands</option>
+    
+      <option value="/pl/wydarzenia">Polski</option>
+    
+      <option value="/ru/events">Русский</option>
+    
+      <option value="/tr/etkinlikler">Türkçe</option>
+    
+      <option value="/bg/events">български</option>
+    
+      <option value="/zh_CN/events">‪简体中文‬</option>
+    
+      <option value="/zh_TW/events">‪繁體中文‬</option>
+    
+      <option value="/ar/">ألعربية</option>
+    
+      <option value="/fa/">فارسی</option>
+    
+    </select>
+    <ul class="lang">
+      <li><a href="#" onclick="return false;">Bahasa Indonesia‬</a>
+      <ul>
+      
+        <li><a href="/de/events">Deutsch</a></li>
+      
+        <li><a href="/en/events">English</a></li>
+      
+        <li><a href="/es/">Español</a></li>
+      
+        <li><a href="/fr/evenements">Français</a></li>
+      
+        <li><a href="/it/eventi">Italiano</a></li>
+      
+        <li><a href="/nl/evenementen">Nederlands</a></li>
+      
+        <li><a href="/pl/wydarzenia">Polski</a></li>
+      
+        <li><a href="/ru/events">Русский</a></li>
+      
+        <li><a href="/tr/etkinlikler">Türkçe</a></li>
+      
+        <li><a href="/bg/events">български</a></li>
+      
+        <li><a href="/zh_CN/events">‪简体中文‬</a></li>
+      
+        <li><a href="/zh_TW/events">‪繁體中文‬</a></li>
+      
+        <li><a href="/ar/">ألعربية</a></li>
+      
+        <li><a href="/fa/">فارسی</a></li>
+      
+      </ul>
+      </li>
+    </ul>
+    <a class="logo" href="/id/"><img src="/img/logotop.svg" alt="Bitcoin"></a>
+    <a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" href="#"></a>
+    <ul id="menusimple" class="menusimple">
+      <li><a href="#" onclick="mobileMenuHover(event);">Pengenalan</a>
+        <ul>
+          <li><a href="/id/bitcoin-untuk-perorangan">Perorangan</a></li>
+          <li><a href="/id/bitcoin-untuk-bisnis">Bisnis</a></li>
+          <li><a href="/id/bitcoin-untuk-para-pengembang">Para Pengembang</a></li>
+          
+          <li><a href="/id/memulai">Memulai</a></li>
+          
+          <li><a href="/id/cara-kerja">Cara kerja</a></li>
+          <li><a href="/id/yang-perlu-anda-ketahui">Yang perlu Anda ketahui</a></li>
+        </ul>
+      </li>
+      <li><a href="#" onclick="mobileMenuHover(event);">Sumber daya</a>
+        <ul>
+          <li><a href="/id/sumber-daya">Sumber daya</a></li>
+          <li><a href="/id/komunitas">Komunitas</a></li>
+          <li><a href="/id/pengembangan">Pengembangan</a></li>
+          <li><a href="/id/kosa-kata">Kosa kata</a></li>
+          
+          <li class="active"><a href="/id/acara">Acara</a></li>
+          
+          
+        </ul>
+      </li>
+      
+      <li><a href="/id/inovasi">Inovasi</a></li>
+      
+      <li><a href="/id/dukung-bitcoin">Partisipasi</a></li>
+      
+      
+    </ul>
+  </div></div>
+  <div class="body">
+    <div id="content" class="content">
+    <link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
+<h1>Konferensi dan acara<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
+<p class="summary">Temukan acara dan konferensi yang diadakan oleh penyelenggara di seluruh dunia.</p>
+
+<link rel="stylesheet" type="text/css" href="/js/leaflet/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.css" />
+<link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.Default.css" />
+<script src="/js/leaflet/leaflet.js"></script>
+<script src="/js/leaflet-markercluster/leaflet.markercluster.js"></script>
+<div id="eventmap" class="eventmap"></div>
+<script>
+var zoom=2;
+if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))zoom=0;
+var map = L.map('eventmap').setView([20.00, 6.00], zoom);
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	attribution: 'Data &copy; by <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.',
+	maxZoom: 18
+}).addTo(map);
+
+var markers = new L.MarkerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 20});
+
+L.marker([52.5243658, 13.3898934]).bindPopup('<b><a href="http://insidebitcoins.de/?c=bcoinbebcorg/">Inside Bitcoins Berlin</a></b><br>2014-02-12<br>Kalkscheune<br>Johannisstr. 2 10117<br>Berlin, Germany').addTo(markers);
+
+L.marker([52.512303, 13.419736]).bindPopup('<b><a href="https://www.eventbrite.com/e/berlin-texas-bitcoin-hackathon-decentralise-everything-tickets-10509228385">Berlin, Texas: Bitcoin hackathon</a></b><br>2014-02-21<br>c-base Raumstation<br>Rungestraße 20, 10179<br>Berlin, Germany').addTo(markers);
+
+L.marker([30.13293, -97.6406811]).bindPopup('<b><a href="http://texasbitcoinconference.com/">2014 Texas Bitcoin Conference</a></b><br>2014-03-06<br>Circuit of the Americas™ - Technology and Conference Center<br>9201 Circuit of the Americas Blvd<br>Austin, TX, United States').addTo(markers);
+
+L.marker([37.4129419, -122.0700908]).bindPopup('<b><a href="http://commercism.co/bitcoin">Commercism Bitcoinference</a></b><br>2014-03-20<br>Microsoft Conference Center<br>1065 La Avenida Street, Building 1<br>Mountain View, CA, United States').addTo(markers);
+
+L.marker([37.7857984, -122.4024238]).bindPopup('<b><a href="http://www.coinsumm.it/">CoinSummit</a></b><br>2014-03-25<br>Yerba Buena Center for the Arts<br>701 Mission Street<br>San Francisco, CA, United States').addTo(markers);
+
+L.marker([40.7575505, -74.0024691]).bindPopup('<b><a href="http://www.mediabistro.com/insidebitcoins/new-york/?c=bcoinnybcorg">Inside Bitcoins NYC</a></b><br>2014-04-07<br>Javits Convention Center<br>655 West 34th Street<br>New York, NY, United States').addTo(markers);
+
+L.marker([43.6438286, -79.3867892]).bindPopup('<b><a href="http://www.bitcoinexpo.ca/">Bitcoin Expo 2014</a></b><br>2014-04-11<br>Metro Toronto Convention Centre<br>255 Front St W<br>Toronto, ON, Canada').addTo(markers);
+
+L.marker([52.3775808, 4.916066]).bindPopup('<b><a href="http://www.bitcoin2014.com/">Bitcoin Foundation Bitcoin 2014</a></b><br>2014-05-15<br>Passenger Terminal<br>Piet Heinkade 271019 BR<br>Amsterdam, Netherlands').addTo(markers);
+
+L.marker([38.90147959999999, -77.02345369999999]).bindPopup('<b><a href="http://www.bitcoinbeltway.com/">Bitcoin in the Beltway</a></b><br>2014-06-20<br>Marriott Renaissance Downtown<br>999 9th St NW<br>Washington, DC, United States').addTo(markers);
+
+L.marker([40.7886448, -119.2030177]).bindPopup('<b><a href="http://campbitcoin.hivewallet.com/">Camp Bitcoin</a></b><br>2014-08-25<br>The Burning Man camp<br><br>Black Rock City, NV, United States').addTo(markers);
+
+map.addLayer(markers);
+</script>
+
+<ul>
+
+  <li>
+    2014-02-12 - <a href="http://insidebitcoins.de/?c=bcoinbebcorg/">Inside Bitcoins Berlin</a> - Berlin, Germany
+  </li>
+
+  <li>
+    2014-02-21 - <a href="https://www.eventbrite.com/e/berlin-texas-bitcoin-hackathon-decentralise-everything-tickets-10509228385">Berlin, Texas: Bitcoin hackathon</a> - Berlin, Germany
+  </li>
+
+  <li>
+    2014-03-06 - <a href="http://texasbitcoinconference.com/">2014 Texas Bitcoin Conference</a> - Austin, TX, United States
+  </li>
+
+  <li>
+    2014-03-20 - <a href="http://commercism.co/bitcoin">Commercism Bitcoinference</a> - Mountain View, CA, United States
+  </li>
+
+  <li>
+    2014-03-25 - <a href="http://www.coinsumm.it/">CoinSummit</a> - San Francisco, CA, United States
+  </li>
+
+  <li>
+    2014-04-07 - <a href="http://www.mediabistro.com/insidebitcoins/new-york/?c=bcoinnybcorg">Inside Bitcoins NYC</a> - New York, NY, United States
+  </li>
+
+  <li>
+    2014-04-11 - <a href="http://www.bitcoinexpo.ca/">Bitcoin Expo 2014</a> - Toronto, ON, Canada
+  </li>
+
+  <li>
+    2014-05-15 - <a href="http://www.bitcoin2014.com/">Bitcoin Foundation Bitcoin 2014</a> - Amsterdam, Netherlands
+  </li>
+
+  <li>
+    2014-06-20 - <a href="http://www.bitcoinbeltway.com/">Bitcoin in the Beltway</a> - Washington, DC, United States
+  </li>
+
+  <li>
+    2014-08-25 - <a href="http://campbitcoin.hivewallet.com/">Camp Bitcoin</a> - Black Rock City, NV, United States
+  </li>
+
+</ul>
+
+<ul>
+  <li><a href="http://bitcoin.meetup.com/">Pertemuan kelompok Bitcoin</a></li>
+  <li><a href="https://bitcointalk.org/index.php?board=86.0">Pertemuan Bitcoin di BitcoinTalk</a></li>
+  <li><a href="https://en.bitcoin.it/wiki/Meetups">Pertemuan Bitcoin di Wiki</a></li>
+</ul>
+
+    </div>
+    <div class="footer"><div>
+    <a href="/en/alerts">Network Status</a>
+    <a href="https://bitcoinfoundation.org/">Yayasan</a>
+    
+    <a href="/en/legal">Legal</a>
+    
+    
+    <a href="/id/mengenai-kami">Mengenai bitcoin.org</a>
+    
+    <span>© Bitcoin Project 2009-2014 Dirilis dibawah <a href="http://opensource.org/licenses/mit-license.php" target="_blank">Lisensi MIT</a></span>
+    </div></div>
+  </div>
+  <script type="text/javascript">fallbackSVG();</script>
+</body>
+
+</html>

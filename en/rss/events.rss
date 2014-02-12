@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+	<title>Bitcoin conferences and events</title>
+	<link>https://bitcoin.org/en/events</link>
+	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
+	<image>
+		<url>https://bitcoin.org/img/logo_rss.png</url>
+		<link>https://bitcoin.org/en/events</link>
+	</image>
+	
+        <item>
+            <title>Inside Bitcoins Berlin, Berlin - Germany</title>
+            <link>http://insidebitcoins.de/?c=bcoinbebcorg/</link>
+            <pubDate>Wed, 12 Feb 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>Berlin, Texas: Bitcoin hackathon, Berlin - Germany</title>
+            <link>https://www.eventbrite.com/e/berlin-texas-bitcoin-hackathon-decentralise-everything-tickets-10509228385</link>
+            <pubDate>Fri, 21 Feb 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>2014 Texas Bitcoin Conference, Austin, TX - United States</title>
+            <link>http://texasbitcoinconference.com/</link>
+            <pubDate>Thu, 06 Mar 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>Commercism Bitcoinference, Mountain View, CA - United States</title>
+            <link>http://commercism.co/bitcoin</link>
+            <pubDate>Thu, 20 Mar 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>CoinSummit, San Francisco, CA - United States</title>
+            <link>http://www.coinsumm.it/</link>
+            <pubDate>Tue, 25 Mar 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>Inside Bitcoins NYC, New York, NY - United States</title>
+            <link>http://www.mediabistro.com/insidebitcoins/new-york/?c=bcoinnybcorg</link>
+            <pubDate>Mon, 07 Apr 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>Bitcoin Expo 2014, Toronto, ON - Canada</title>
+            <link>http://www.bitcoinexpo.ca/</link>
+            <pubDate>Fri, 11 Apr 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>Bitcoin Foundation Bitcoin 2014, Amsterdam - Netherlands</title>
+            <link>http://www.bitcoin2014.com/</link>
+            <pubDate>Thu, 15 May 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>Bitcoin in the Beltway, Washington, DC - United States</title>
+            <link>http://www.bitcoinbeltway.com/</link>
+            <pubDate>Fri, 20 Jun 2014</pubDate>
+        </item>
+	
+        <item>
+            <title>Camp Bitcoin, Black Rock City, NV - United States</title>
+            <link>http://campbitcoin.hivewallet.com/</link>
+            <pubDate>Mon, 25 Aug 2014</pubDate>
+        </item>
+	
+</channel>
+</rss>
